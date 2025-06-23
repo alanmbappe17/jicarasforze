@@ -1,0 +1,184 @@
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1A112A;
+    color: #EEE;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2E1B4D;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Menú lateral */
+aside nav {
+    position: sticky;
+    top: 0;
+    z-index: 999; /* se asegura de que esté por encima del contenido */
+    background-color: #2E1B4D; /* igual que antes */
+}
+aside nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+aside nav ul li a {
+    color: #EEE;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #3C2A5D;
+}
+
+aside nav ul li a:hover {
+    background-color: #3C2A5D;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #392653;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: #8E24AA;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6A1B9A;
+}
+
+/* Servicios */
+#servicios {
+    background-color: #2E1B4D;
+    padding: 2rem 1rem;
+}
+
+#servicios h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.servicios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.servicio {
+    background-color: #3C2A5D;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.servicio h3 {
+    color: #E1BEE7;
+}
+
+.servicio p {
+    color: #CCC;
+}
+
+.servicio img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+/* Galería */
+.galeria-expandible {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.img-galeria {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Horarios, Videos, Contacto */
+#horarios, #videos, #contacto {
+    background-color: #2E1B4D;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+}
+
+#horarios h2, #videos h2, #contacto h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+#horarios p, #contacto p {
+    color: #CCC;
+}
+
+/* Videos */
+video {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #1A112A;
+    color: #AAA;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive: Desktop */
+@media (min-width: 768px) {
+    .servicios-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .servicio {
+        width: 30%;
+    }
+
+    .galeria-expandible {
+        flex-direction: row;
+    }
+
+    .img-galeria {
+        width: 48%;
+    }
+
+    aside nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
